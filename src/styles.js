@@ -20,6 +20,7 @@ export const LeftMenuDiv = styled.div`
   display: flex;
   width: 30%;
   height: 100vh;
+  flex-direction: column;
   position: absolute;
   background-color: white;
 `;
@@ -37,15 +38,21 @@ export const ContentDiv = styled.div`
 `;
 
 export const User = styled.img`
-      width: 40px;
-      margin-left: 30px;
-      border-radius: 50%;
+  width: 40px;
+  margin-left: 30px;
+  border-radius: 50%;
+`;
+export const Smile = styled.img`
+  width: 25px;
+  margin: 0 30px;
+  border-radius: 50%;
+  filter: invert(100%);
 `;
 export const Search = styled.img`
-      color: white;
-      filter: invert(100%);
-      width: 20px;
-      margin-left: 70%;
+  color: white;
+  filter: invert(100%);
+  width: 20px;
+  margin-left: 70%;
 `;
 
 export const Title = styled.h1`

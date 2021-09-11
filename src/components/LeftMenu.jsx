@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
+import reactDom from 'react-dom';
 
 import { LeftMenuDiv } from '../styles';
 
-
-
 function LeftMenu() {
+
 
     const [show, setShow] = useState(false);
 
     return (
         <>
             <LeftMenuDiv>
-                <h1></h1>
                 <ul>
                     <a href=""><li>Perfil</li></a>
                     <a href=""><li>Status</li></a>
@@ -22,5 +21,6 @@ function LeftMenu() {
         </>
     );
 }
+
 
 export default LeftMenu;

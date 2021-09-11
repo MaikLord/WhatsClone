@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
-import { Title, Button, MainDiv, Message, User, Search } from '../styles';
+import { Title, Button, MainDiv, Message, User, Search, Smile } from '../styles';
 import user from '../assets/user.jpg';
 import searchIcon from '../assets/search-solid.svg';
-import smileIcon from '../assets/smile-solid.svg';
-
-
+import smileIcon from '../assets/smile-regular.svg';
 
 function Main() {
 
@@ -25,9 +23,7 @@ function Main() {
                     <Search src={searchIcon} />
                 </Title>
                 <Message>
-                    <div>
-                        <img src={smileIcon} />
-                    </div>
+                    <Smile src={smileIcon} />
                     <div>
                         <input type="text" />
                     </div>

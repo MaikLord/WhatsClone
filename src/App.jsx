@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 
 
 import Main from './components/Main.jsx'
@@ -8,12 +9,9 @@ import Content from "./components/Content.jsx";
 
 function App() {
 
-  const [showMenu, showLeftMenu] = useState('true');
-
   return (
     <>
-      {showMenu ? <LeftMenu /> : null}
-      <button onClick={() => showLeftMenu(!showMenu)}>Open</button>
+      <LeftMenu />
       <Main />
       <GlobalStyle />
     </>
