@@ -1,7 +1,7 @@
 # Clone para WhatsApp Web Feito Por Lucas josé (MaikLord) e Honker™.
 
 
-## Entendendo Components em React `Completed`
+#### Entendendo Components em React `Completed`
 
-### Usando o UseState para adicionar novar conversas `In Progress`
+#### Usando o UseState para adicionar novar conversas `In Progress`
 
