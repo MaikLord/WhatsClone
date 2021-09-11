@@ -15,7 +15,6 @@ export default createGlobalStyle`
     background-color: #262D31;
   }
 `;
-
 export const LeftMenuDiv = styled.div`
   display: flex;
   width: 30%;

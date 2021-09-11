@@ -5,7 +5,6 @@ import { LeftMenuDiv } from '../styles';
 
 function LeftMenu() {
 
-
     const [show, setShow] = useState(false);
 
     return (

@@ -8,7 +8,6 @@ import GlobalStyle from "./styles";
 import Content from "./components/Content.jsx";
 
 function App() {
-
   return (
     <>
       <LeftMenu />
