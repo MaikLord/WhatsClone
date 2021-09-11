@@ -21,7 +21,26 @@ export const LeftMenuDiv = styled.div`
   height: 100vh;
   flex-direction: column;
   position: absolute;
+  align-items: center;
   background-color: white;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar{
+width: 6px;
+height: 13px;
+}
+::-webkit-scrollbar-thumb{
+background: #202020;
+border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover{
+background: #404040;
+}
+::-webkit-scrollbar-track{
+background: #F0F0F0;
+border-radius: 0px;
+box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
 `;
 export const MainDiv = styled.div`
   position: absolute;
@@ -103,6 +122,40 @@ export const Message = styled.div`
     }
   }
 `;
+export const AddNewMessage = styled.button`
+  width: 100%;
+  color: turquoise;
+  background-color: #2A2F32;
+  height: 60px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 25px;
+
+  &:active {
+    background-color: #2A2F85;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+`;
+export const UserMessage = styled.div`
+  width: 100%;
+  padding: 20px;
+  color: white;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: tomato;
+
+  &:active{
+    background-color: turquoise;
+  }
+`;
+export const UserNameH1 = styled.h1`
+  color: white;
+  font-size: 6pt;
+`;
+
 
 export const Button = styled.button`
   background: ${props => props.primary ? "tomato" : "transparent"};

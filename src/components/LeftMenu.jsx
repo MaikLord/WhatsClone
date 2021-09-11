@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
-import reactDom from 'react-dom';
+import ReactDom from 'react-dom';
 
-import { LeftMenuDiv } from '../styles';
+import { LeftMenuDiv, UserMessage, AddNewMessage, User } from '../styles';
+
+import UserName from '../components/UserName.jsx'
+
+import user from '../assets/user.jpg';
 
 function LeftMenu() {
 
-    const [show, setShow] = useState(false);
+    const DivMessage = () => {
+        return <UserMessage> <User src={user} /> <UserName />  </UserMessage>;
+    };
+    const [userMessage, setMessage] = useState([]);
+
+    const onAddBtnClick = event => {
+        setMessage(userMessage.concat(<DivMessage key={userMessage.length} />));
+    };
+
 
     return (
         <>
             <LeftMenuDiv>
-                <ul>
-                    <a href=""><li>Perfil</li></a>
-                    <a href=""><li>Status</li></a>
-                    <a href=""><li>Conversa</li></a>
-                    <a href=""><li>Configurações</li></a>
-                </ul>
+                <AddNewMessage onClick={onAddBtnClick}>Adicionar Mensagem</AddNewMessage> {userMessage}
             </LeftMenuDiv>
         </>
     );
